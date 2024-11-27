@@ -62,8 +62,8 @@ if archivo:
 
             with col1:
                 st.subheader(f"{producto}")
-                st.metric("Precio Promedio", f"${precio_promedio:,.0f}".replace(",", "."), f"{variacion_precio:.2f}%")
-                st.metric("Margen Promedio", f"{margen_promedio:.2f}%", f"{variacion_margen:.2f}%")
+                st.metric("Precio Promedio", f"${precio_promedio:,.0f}", f"{variacion_precio:.2f}%")
+                st.metric("Margen Promedio", f"{margen_promedio.round():.2f}%", f"{variacion_margen:.2f}%")
                 st.metric("Unidades Vendidas", f"{total_unidades_vendidas:,.0f}", f"{variacion_unidades:.2f}%")
 
             with col2:
